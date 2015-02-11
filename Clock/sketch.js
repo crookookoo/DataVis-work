@@ -41,6 +41,11 @@ function setup() {
   cx = width/2 - r*cos(theta);
   cy = height/2- r*sin(theta);
 
+}
+
+function draw(){
+  stats.begin();
+
 // Color scheme
   night=true;
   if(hour()>6 && hour()<18) night=false;
@@ -49,11 +54,6 @@ function setup() {
   if(night) hr = color(0);
        else hr = color(230); 
   mn = color(236,64,99);
-
-}
-
-function draw(){
-  stats.begin();
 
  	 background(bg);
 
